@@ -3,6 +3,8 @@ package tech.takanaru.tutorialmod;
 import tech.takanaru.tutorialmod.block.ModBlocks;
 import tech.takanaru.tutorialmod.effect.ModEffects;
 import tech.takanaru.tutorialmod.enchantment.ModEnchantments;
+import tech.takanaru.tutorialmod.particle.ModParticles;
+import tech.takanaru.tutorialmod.particle.SilverSparkleParticle;
 import tech.takanaru.tutorialmod.item.ModCreativeModTabs;
 import tech.takanaru.tutorialmod.item.ModItems;
 import tech.takanaru.tutorialmod.potion.ModPotions;
@@ -53,6 +55,7 @@ public class TakanaruMod
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEnchantments.register(modEventBus);
+        ModParticles.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -102,6 +105,12 @@ public class TakanaruMod
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_BLOSSOM.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_SILVER_BLOSSOM.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_BERRY_CROP.get(), RenderType.cutout());
+        }
+
+        @SubscribeEvent
+        public static void onRegisterParticles(net.minecraftforge.client.event.RegisterParticleProvidersEvent event)
+        {
+            event.registerSpriteSet(ModParticles.SILVER_SPARKLE.get(), SilverSparkleParticle.Provider::new);
         }
     }
 }
