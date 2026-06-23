@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "takanarumod:raw_silver"
+  },
+  "result": "takanarumod:silver",
+  "experience": 0.7,
+  "cookingtime": 100
+}
