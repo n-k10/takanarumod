@@ -26,6 +26,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SILVER_BERRY.get());
                         pOutput.accept(ModItems.SILVER_BERRY_SEEDS.get());
                         pOutput.accept(ModItems.SILVER_COAL.get());
+                        pOutput.accept(ModItems.SILVER_DETECTOR.get());
 
                         pOutput.accept(ModItems.SILVER_SWORD.get());
                         pOutput.accept(ModItems.SILVER_PICKAXE.get());

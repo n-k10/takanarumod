@@ -2,36 +2,28 @@
 
 Minecraft Forge 1.20.1 のModding入門リポジトリです。
 
-## Step 19: サウンドを追加しよう
+## Step 20: 特殊アイテムを作ろう
 
-このステップでは、カスタム効果音「銀の音色（Silver Chime）」を追加します。
-銀のランプがオン/オフするときに鳴ります。
+このステップでは、右クリックで近くの銀鉱石を探知する「銀の探知機」を追加します。
+半径5ブロック以内に銀鉱石があると座標を表示します。
 
 ### やること
-- `ModSounds.java` を作成してサウンドイベントを登録する
-- `TakanaruMod.java` に `ModSounds.register()` を追加する
-- `sounds.json` でサウンドイベントとOGGファイルを紐づける
-- `SilverLampBlock.java` でランプ切り替え時にサウンドを再生する
-- 翻訳ファイルに字幕テキストを追加する
+- `SilverDetectorItem.java` を作成して `use()` メソッドをオーバーライドする
+- 周囲のブロックをスキャンして銀鉱石を探す
+- 結果をチャットメッセージで表示する
+- クールダウン（2秒）を設定する
 
 ### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/java/tech/takanaru/tutorialmod/sound/ModSounds.java` | 新規 |
-| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/block/SilverLampBlock.java` | 編集 |
-| `src/main/resources/assets/takanarumod/sounds.json` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/item/SilverDetectorItem.java` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/item/ModItems.java` | 編集 |
+| `src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java` | 編集 |
+| `src/main/resources/assets/takanarumod/models/item/silver_detector.json` | 新規 |
+| `src/main/resources/data/takanarumod/recipes/silver_detector.json` | 新規 |
 | `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
 | `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
 
-### サウンドファイル
-以下のサウンドファイルを用意して配置してください（OGG Vorbis形式）:
-- `src/main/resources/assets/takanarumod/sounds/silver_chime.ogg`
-
-#### OGGファイルの作り方
-1. フリーの効果音サイトからWAVやMP3ファイルをダウンロード（例: [効果音ラボ](https://soundeffect-lab.info/)）
-2. [Audacity](https://www.audacityteam.org/) などのツールでOGG Vorbis形式に変換して保存
-3. 上記のパスに配置する
-
 ### テクスチャ
-このステップでは新しいテクスチャは不要です。
+以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
+- `src/main/resources/assets/takanarumod/textures/item/silver_detector.png`

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SRS",
+    " / "
+  ],
+  "key": {
+    "S": { "item": "takanarumod:silver" },
+    "R": { "item": "minecraft:redstone" },
+    "/": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "takanarumod:silver_detector" }
+}
