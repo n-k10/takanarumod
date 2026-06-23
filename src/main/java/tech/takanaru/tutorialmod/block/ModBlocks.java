@@ -47,6 +47,11 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
                     BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noCollission(), BlockSetType.IRON));
 
+    public static final RegistryObject<Block> SILVER_LAMP = registerBlock("silver_lamp",
+            () -> new SilverLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
+                    .strength(3.0F, 3.0F).sound(SoundType.METAL)
+                    .lightLevel(state -> state.getValue(SilverLampBlock.LIT) ? 15 : 0)));
+
     public static final RegistryObject<Block> SILVER_DOOR = registerBlock("silver_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noOcclusion(), BlockSetType.IRON));
 

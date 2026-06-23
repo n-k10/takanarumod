@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SRS",
+    " S "
+  ],
+  "key": {
+    "S": { "item": "takanarumod:silver" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": { "item": "takanarumod:silver_lamp" }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "takanarumod:block/silver_lamp" },
+    "lit=true":  { "model": "takanarumod:block/silver_lamp_on" }
+  }
+}
