@@ -2,6 +2,11 @@
   "item.takanarumod.silver": "銀",
   "item.takanarumod.raw_silver": "銀の原石",
   "item.takanarumod.silver_apple": "銀のリンゴ",
+  "item.takanarumod.silver_sword": "銀の剣",
+  "item.takanarumod.silver_pickaxe": "銀のツルハシ",
+  "item.takanarumod.silver_axe": "銀の斧",
+  "item.takanarumod.silver_shovel": "銀のシャベル",
+  "item.takanarumod.silver_hoe": "銀のクワ",
 
   "block.takanarumod.silver_block": "銀ブロック",
   "block.takanarumod.silver_ore": "銀鉱石",
