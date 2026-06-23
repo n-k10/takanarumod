@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "takanarumod:silver" },
+    { "item": "minecraft:coal" }
+  ],
+  "result": {
+    "item": "takanarumod:silver_coal",
+    "count": 2
+  }
+}

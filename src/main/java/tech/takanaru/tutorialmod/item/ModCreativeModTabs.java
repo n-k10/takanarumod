@@ -23,6 +23,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RAW_SILVER.get());
 
                         pOutput.accept(ModItems.SILVER_APPLE.get());
+                        pOutput.accept(ModItems.SILVER_COAL.get());
 
                         pOutput.accept(ModItems.SILVER_SWORD.get());
                         pOutput.accept(ModItems.SILVER_PICKAXE.get());

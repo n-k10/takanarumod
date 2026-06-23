@@ -34,6 +34,9 @@ public class ModItems {
                     .alwaysEat()
                     .build())));
 
+    public static final RegistryObject<Item> SILVER_COAL = ITEMS.register("silver_coal",
+            () -> new SilverCoalItem(new Item.Properties()));
+
     public static final RegistryObject<Item> SILVER_SWORD = ITEMS.register("silver_sword",
             () -> new SwordItem(ModToolTiers.SILVER, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register("silver_pickaxe",
