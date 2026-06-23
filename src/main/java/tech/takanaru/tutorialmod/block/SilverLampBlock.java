@@ -1,6 +1,8 @@
 package tech.takanaru.tutorialmod.block;
 
+import tech.takanaru.tutorialmod.sound.ModSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,6 +28,7 @@ public class SilverLampBlock extends Block {
             boolean powered = level.hasNeighborSignal(pos);
             if (powered != state.getValue(LIT)) {
                 level.setBlock(pos, state.setValue(LIT, powered), 3);
+                level.playSound(null, pos, ModSounds.SILVER_CHIME.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
             }
         }
     }

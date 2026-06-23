@@ -3,6 +3,7 @@ package tech.takanaru.tutorialmod;
 import tech.takanaru.tutorialmod.block.ModBlocks;
 import tech.takanaru.tutorialmod.item.ModCreativeModTabs;
 import tech.takanaru.tutorialmod.item.ModItems;
+import tech.takanaru.tutorialmod.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -45,6 +46,7 @@ public class TakanaruMod
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
