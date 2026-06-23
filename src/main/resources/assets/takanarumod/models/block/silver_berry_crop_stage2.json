@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "takanarumod:block/silver_berry_crop_stage2"
+  }
+}

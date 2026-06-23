@@ -82,6 +82,7 @@ public class TakanaruMod
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_TRAPDOOR.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_BLOSSOM.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_SILVER_BLOSSOM.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_BERRY_CROP.get(), RenderType.cutout());
         }
     }
 }

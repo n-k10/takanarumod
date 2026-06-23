@@ -1,6 +1,7 @@
 package tech.takanaru.tutorialmod.item;
 
 import tech.takanaru.tutorialmod.TakanaruMod;
+import tech.takanaru.tutorialmod.block.ModBlocks;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.SwordItem;
@@ -33,6 +35,13 @@ public class ModItems {
                     .effect(() -> new MobEffectInstance(MobEffects.LUCK, 600, 0), 1.0f)
                     .alwaysEat()
                     .build())));
+
+    public static final RegistryObject<Item> SILVER_BERRY = ITEMS.register("silver_berry",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(3).saturationMod(0.6f).build())));
+
+    public static final RegistryObject<Item> SILVER_BERRY_SEEDS = ITEMS.register("silver_berry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.SILVER_BERRY_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> SILVER_COAL = ITEMS.register("silver_coal",
             () -> new SilverCoalItem(new Item.Properties()));
