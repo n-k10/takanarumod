@@ -22,6 +22,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SILVER.get());
                         pOutput.accept(ModItems.RAW_SILVER.get());
 
+                        pOutput.accept(ModItems.SILVER_APPLE.get());
+
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());
                         pOutput.accept(ModBlocks.SILVER_ORE.get());
                     })
