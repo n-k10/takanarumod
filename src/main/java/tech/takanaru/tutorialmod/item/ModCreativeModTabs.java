@@ -1,6 +1,7 @@
 package tech.takanaru.tutorialmod.item;
 
 import tech.takanaru.tutorialmod.TakanaruMod;
+import tech.takanaru.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SILVER.get());
                         pOutput.accept(ModItems.RAW_SILVER.get());
 
+                        pOutput.accept(ModBlocks.SILVER_BLOCK.get());
+                        pOutput.accept(ModBlocks.SILVER_ORE.get());
                     })
                     .build());
 

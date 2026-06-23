@@ -2,5 +2,8 @@
   "item.takanarumod.silver": "Silver",
   "item.takanarumod.raw_silver": "Raw Silver",
 
+  "block.takanarumod.silver_block": "Silver Block",
+  "block.takanarumod.silver_ore": "Silver Ore",
+
   "creativetab.tutorial_tab": "Takanaru Tab"
 }

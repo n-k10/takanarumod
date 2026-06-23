@@ -1,5 +1,6 @@
 package tech.takanaru.tutorialmod;
 
+import tech.takanaru.tutorialmod.block.ModBlocks;
 import tech.takanaru.tutorialmod.item.ModCreativeModTabs;
 import tech.takanaru.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -39,6 +40,7 @@ public class TakanaruMod
 
         modEventBus.addListener(this::commonSetup);
 
+        ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
 
