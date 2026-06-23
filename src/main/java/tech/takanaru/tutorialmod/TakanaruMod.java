@@ -2,6 +2,7 @@ package tech.takanaru.tutorialmod;
 
 import tech.takanaru.tutorialmod.block.ModBlocks;
 import tech.takanaru.tutorialmod.effect.ModEffects;
+import tech.takanaru.tutorialmod.enchantment.ModEnchantments;
 import tech.takanaru.tutorialmod.item.ModCreativeModTabs;
 import tech.takanaru.tutorialmod.item.ModItems;
 import tech.takanaru.tutorialmod.potion.ModPotions;
@@ -51,6 +52,7 @@ public class TakanaruMod
         ModSounds.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEnchantments.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
