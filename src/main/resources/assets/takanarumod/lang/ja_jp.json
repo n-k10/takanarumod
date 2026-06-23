@@ -15,5 +15,8 @@
   "block.takanarumod.silver_block": "銀ブロック",
   "block.takanarumod.silver_ore": "銀鉱石",
 
+  "tooltip.takanarumod.silver_sword": "敵を発光させる",
+  "tooltip.takanarumod.silver": "不思議な銀の金属...",
+
   "creativetab.tutorial_tab": "たかなるタブ"
 }

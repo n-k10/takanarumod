@@ -15,5 +15,8 @@
   "block.takanarumod.silver_block": "Silver Block",
   "block.takanarumod.silver_ore": "Silver Ore",
 
+  "tooltip.takanarumod.silver_sword": "Makes enemies glow on hit",
+  "tooltip.takanarumod.silver": "A mysterious silver metal...",
+
   "creativetab.tutorial_tab": "Takanaru Tab"
 }
