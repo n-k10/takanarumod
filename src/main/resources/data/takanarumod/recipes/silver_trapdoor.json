@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": { "item": "takanarumod:silver" }
+  },
+  "result": { "item": "takanarumod:silver_trapdoor", "count": 2 }
+}

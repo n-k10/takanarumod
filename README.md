@@ -2,13 +2,14 @@
 
 Minecraft Forge 1.20.1 のModding入門リポジトリです。
 
-## Step 13: 装飾ブロックを追加しよう
+## Step 14: ドアとトラップドアを追加しよう
 
-このステップでは、銀ブロックのバリエーション（階段・ハーフブロック・感圧板）を追加します。
-銀ブロックのテクスチャを使い回すので、新しいテクスチャは不要です。
+このステップでは、開閉できるインタラクティブなブロック（銀のドア・銀のトラップドア）を追加します。
+ドアは透明部分があるため、RenderTypeの設定（cutout）が必要です。
 
 ### やること
-- `ModBlocks.java` に `StairBlock`, `SlabBlock`, `PressurePlateBlock` を登録する
+- `ModBlocks.java` に `DoorBlock`, `TrapDoorBlock` を登録する
+- `TakanaruMod.java` のクライアント設定でRenderType.cutout()を設定する
 - クリエイティブタブに追加する
 - ブロックステート・ブロックモデル・アイテムモデルのJSONを追加する
 - ルートテーブル・レシピ・翻訳・タグを追加する
@@ -17,29 +18,25 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 | ファイル | 種類 |
 |---------|------|
 | `src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java` | 編集 |
+| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
 | `src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java` | 編集 |
-| `src/main/resources/assets/takanarumod/blockstates/silver_stairs.json` | 新規 |
-| `src/main/resources/assets/takanarumod/blockstates/silver_slab.json` | 新規 |
-| `src/main/resources/assets/takanarumod/blockstates/silver_pressure_plate.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_stairs.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_stairs_inner.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_stairs_outer.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_slab.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_slab_top.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_pressure_plate.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/block/silver_pressure_plate_down.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_stairs.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_slab.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_pressure_plate.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_stairs.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_slab.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_pressure_plate.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_stairs.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_slab.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_pressure_plate.json` | 新規 |
+| `src/main/resources/assets/takanarumod/blockstates/silver_door.json` | 新規 |
+| `src/main/resources/assets/takanarumod/blockstates/silver_trapdoor.json` | 新規 |
+| `src/main/resources/assets/takanarumod/models/block/silver_door_*.json` (8ファイル) | 新規 |
+| `src/main/resources/assets/takanarumod/models/block/silver_trapdoor_*.json` (3ファイル) | 新規 |
+| `src/main/resources/assets/takanarumod/models/item/silver_door.json` | 新規 |
+| `src/main/resources/assets/takanarumod/models/item/silver_trapdoor.json` | 新規 |
+| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_door.json` | 新規 |
+| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_trapdoor.json` | 新規 |
+| `src/main/resources/data/takanarumod/recipes/silver_door.json` | 新規 |
+| `src/main/resources/data/takanarumod/recipes/silver_trapdoor.json` | 新規 |
 | `src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json` | 編集 |
 | `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
 | `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
 
 ### テクスチャ
-このステップでは新しいテクスチャは不要です（銀ブロックのテクスチャを使い回します）。
+以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
+- `src/main/resources/assets/takanarumod/textures/block/silver_door_top.png`（ドア上半分）
+- `src/main/resources/assets/takanarumod/textures/block/silver_door_bottom.png`（ドア下半分）
+- `src/main/resources/assets/takanarumod/textures/block/silver_trapdoor.png`（トラップドア）
+- `src/main/resources/assets/takanarumod/textures/item/silver_door.png`（ドアのアイテムアイコン）

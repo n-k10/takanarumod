@@ -41,6 +41,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SILVER_STAIRS.get());
                         pOutput.accept(ModBlocks.SILVER_SLAB.get());
                         pOutput.accept(ModBlocks.SILVER_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.SILVER_DOOR.get());
+                        pOutput.accept(ModBlocks.SILVER_TRAPDOOR.get());
                     })
                     .build());
 

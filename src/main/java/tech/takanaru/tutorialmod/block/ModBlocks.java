@@ -5,10 +5,12 @@ import tech.takanaru.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -44,6 +46,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> SILVER_PRESSURE_PLATE = registerBlock("silver_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
                     BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noCollission(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> SILVER_DOOR = registerBlock("silver_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> SILVER_TRAPDOOR = registerBlock("silver_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noOcclusion(), BlockSetType.IRON));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
