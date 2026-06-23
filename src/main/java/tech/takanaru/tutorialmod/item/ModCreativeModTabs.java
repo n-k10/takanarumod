@@ -44,6 +44,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SILVER_LAMP.get());
                         pOutput.accept(ModBlocks.SILVER_DOOR.get());
                         pOutput.accept(ModBlocks.SILVER_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.SILVER_BLOSSOM.get());
                     })
                     .build());
 

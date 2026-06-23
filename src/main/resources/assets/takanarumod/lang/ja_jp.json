@@ -21,6 +21,8 @@
   "block.takanarumod.silver_lamp": "銀のランプ",
   "block.takanarumod.silver_door": "銀のドア",
   "block.takanarumod.silver_trapdoor": "銀のトラップドア",
+  "block.takanarumod.silver_blossom": "銀の花",
+  "block.takanarumod.potted_silver_blossom": "銀の花の植木鉢",
 
   "tooltip.takanarumod.silver_sword": "敵を発光させる",
   "tooltip.takanarumod.silver": "不思議な銀の金属...",

@@ -5,7 +5,11 @@ import tech.takanaru.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -57,6 +61,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SILVER_TRAPDOOR = registerBlock("silver_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> SILVER_BLOSSOM = registerBlock("silver_blossom",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 200,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> POTTED_SILVER_BLOSSOM = BLOCKS.register("potted_silver_blossom",
+            () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, SILVER_BLOSSOM,
+                    BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

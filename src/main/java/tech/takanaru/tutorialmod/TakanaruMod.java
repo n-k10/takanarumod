@@ -55,7 +55,10 @@ public class TakanaruMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("HELLO FROM COMMON SETUP");
+        event.enqueueWork(() -> {
+            ((net.minecraft.world.level.block.FlowerPotBlock) net.minecraft.world.level.block.Blocks.FLOWER_POT)
+                    .addPlant(ModBlocks.SILVER_BLOSSOM.getId(), ModBlocks.POTTED_SILVER_BLOSSOM);
+        });
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
@@ -77,6 +80,8 @@ public class TakanaruMod
         {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_DOOR.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_TRAPDOOR.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SILVER_BLOSSOM.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_SILVER_BLOSSOM.get(), RenderType.cutout());
         }
     }
 }

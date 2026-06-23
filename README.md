@@ -2,26 +2,33 @@
 
 Minecraft Forge 1.20.1 のModding入門リポジトリです。
 
-## Step 16: 鉱石をワールドに生成しよう
+## Step 17: 花ブロックを追加しよう
 
-このステップでは、銀鉱石がワールド生成時に自然にスポーンするようにします。
-新しいワールドを作ると、洞窟で銀鉱石を見つけられるようになります！
+このステップでは、カスタム花ブロック「銀の花」を追加します。
+植木鉢に入れることもでき、怪しいシチューに入れると幸運効果がつきます。
 
 ### やること
-- `configured_feature`（鉱石の種類と鉱脈サイズを定義）
-- `placed_feature`（生成される高さや頻度を定義）
-- `forge/biome_modifier`（オーバーワールドの全バイオームに追加）
+- `ModBlocks.java` に `FlowerBlock` と `FlowerPotBlock` を登録する
+- `TakanaruMod.java` の `commonSetup` で植木鉢に花を登録する
+- クライアントで `RenderType.cutout()` を設定する（花は透過表示が必要）
+- クリエイティブタブに追加する
+- ブロックステート・ブロックモデル・アイテムモデル・ルートテーブル・翻訳を追加する
 
-### 追加するファイル
+### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/resources/data/takanarumod/worldgen/configured_feature/silver_ore.json` | 新規 |
-| `src/main/resources/data/takanarumod/worldgen/placed_feature/silver_ore_placed.json` | 新規 |
-| `src/main/resources/data/takanarumod/forge/biome_modifier/add_silver_ore.json` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java` | 編集 |
+| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
+| `src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java` | 編集 |
+| `src/main/resources/assets/takanarumod/blockstates/silver_blossom.json` | 新規 |
+| `src/main/resources/assets/takanarumod/blockstates/potted_silver_blossom.json` | 新規 |
+| `src/main/resources/assets/takanarumod/models/block/silver_blossom.json` | 新規 |
+| `src/main/resources/assets/takanarumod/models/block/potted_silver_blossom.json` | 新規 |
+| `src/main/resources/assets/takanarumod/models/item/silver_blossom.json` | 新規 |
+| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_blossom.json` | 新規 |
+| `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
+| `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
 
 ### テクスチャ
-このステップでは新しいテクスチャは不要です。
-
-### 確認方法
-新しいワールドを作成して洞窟を探検すると、Y=-24〜56の高さに銀鉱石が生成されています。
-（既存のワールドでは新しいチャンクにのみ生成されます）
+以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
+- `src/main/resources/assets/takanarumod/textures/block/silver_blossom.png`（花のクロス型テクスチャ）

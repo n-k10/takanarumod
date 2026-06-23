@@ -21,6 +21,8 @@
   "block.takanarumod.silver_lamp": "Silver Lamp",
   "block.takanarumod.silver_door": "Silver Door",
   "block.takanarumod.silver_trapdoor": "Silver Trapdoor",
+  "block.takanarumod.silver_blossom": "Silver Blossom",
+  "block.takanarumod.potted_silver_blossom": "Potted Silver Blossom",
 
   "tooltip.takanarumod.silver_sword": "Makes enemies glow on hit",
   "tooltip.takanarumod.silver": "A mysterious silver metal...",
