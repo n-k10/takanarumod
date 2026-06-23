@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "takanarumod:block/silver_pressure_plate" },
+    "powered=true":  { "model": "takanarumod:block/silver_pressure_plate_down" }
+  }
+}

@@ -38,6 +38,9 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());
                         pOutput.accept(ModBlocks.SILVER_ORE.get());
+                        pOutput.accept(ModBlocks.SILVER_STAIRS.get());
+                        pOutput.accept(ModBlocks.SILVER_SLAB.get());
+                        pOutput.accept(ModBlocks.SILVER_PRESSURE_PLATE.get());
                     })
                     .build());
 

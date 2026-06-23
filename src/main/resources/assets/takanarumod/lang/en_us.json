@@ -15,6 +15,9 @@
 
   "block.takanarumod.silver_block": "Silver Block",
   "block.takanarumod.silver_ore": "Silver Ore",
+  "block.takanarumod.silver_stairs": "Silver Stairs",
+  "block.takanarumod.silver_slab": "Silver Slab",
+  "block.takanarumod.silver_pressure_plate": "Silver Pressure Plate",
 
   "tooltip.takanarumod.silver_sword": "Makes enemies glow on hit",
   "tooltip.takanarumod.silver": "A mysterious silver metal...",

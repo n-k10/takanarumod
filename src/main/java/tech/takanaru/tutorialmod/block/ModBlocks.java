@@ -5,8 +5,12 @@ import tech.takanaru.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,6 +33,17 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
                     .instrument(NoteBlockInstrument.BASEDRUM)
                     .requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> SILVER_STAIRS = registerBlock("silver_stairs",
+            () -> new StairBlock(() -> SILVER_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(SILVER_BLOCK.get())));
+
+    public static final RegistryObject<Block> SILVER_SLAB = registerBlock("silver_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(SILVER_BLOCK.get())));
+
+    public static final RegistryObject<Block> SILVER_PRESSURE_PLATE = registerBlock("silver_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS,
+                    BlockBehaviour.Properties.copy(SILVER_BLOCK.get()).noCollission(), BlockSetType.IRON));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

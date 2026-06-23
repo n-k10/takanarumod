@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "takanarumod:silver_block",
-    "takanarumod:silver_ore"
+    "takanarumod:silver_ore",
+    "takanarumod:silver_stairs",
+    "takanarumod:silver_slab",
+    "takanarumod:silver_pressure_plate"
   ]
 }

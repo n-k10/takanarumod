@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS"
+  ],
+  "key": {
+    "S": { "item": "takanarumod:silver_block" }
+  },
+  "result": { "item": "takanarumod:silver_pressure_plate" }
+}

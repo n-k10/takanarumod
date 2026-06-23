@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S  ",
+    "SS ",
+    "SSS"
+  ],
+  "key": {
+    "S": { "item": "takanarumod:silver_block" }
+  },
+  "result": { "item": "takanarumod:silver_stairs", "count": 4 }
+}

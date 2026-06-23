@@ -15,6 +15,9 @@
 
   "block.takanarumod.silver_block": "銀ブロック",
   "block.takanarumod.silver_ore": "銀鉱石",
+  "block.takanarumod.silver_stairs": "銀の階段",
+  "block.takanarumod.silver_slab": "銀のハーフブロック",
+  "block.takanarumod.silver_pressure_plate": "銀の感圧板",
 
   "tooltip.takanarumod.silver_sword": "敵を発光させる",
   "tooltip.takanarumod.silver": "不思議な銀の金属...",
