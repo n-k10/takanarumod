@@ -30,6 +30,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SILVER_SHOVEL.get());
                         pOutput.accept(ModItems.SILVER_HOE.get());
 
+                        pOutput.accept(ModItems.SILVER_HELMET.get());
+                        pOutput.accept(ModItems.SILVER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SILVER_LEGGINGS.get());
+                        pOutput.accept(ModItems.SILVER_BOOTS.get());
+
                         pOutput.accept(ModBlocks.SILVER_BLOCK.get());
                         pOutput.accept(ModBlocks.SILVER_ORE.get());
                     })
