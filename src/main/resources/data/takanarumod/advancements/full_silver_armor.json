@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": { "item": "takanarumod:silver_chestplate" },
+    "title": { "translate": "advancement.takanarumod.full_silver_armor.title" },
+    "description": { "translate": "advancement.takanarumod.full_silver_armor.description" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "takanarumod:root",
+  "criteria": {
+    "has_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_helmet"] }] }
+    },
+    "has_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_chestplate"] }] }
+    },
+    "has_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_leggings"] }] }
+    },
+    "has_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_boots"] }] }
+    }
+  }
+}

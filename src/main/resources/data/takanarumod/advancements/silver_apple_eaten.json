@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "takanarumod:silver_apple" },
+    "title": { "translate": "advancement.takanarumod.silver_apple_eaten.title" },
+    "description": { "translate": "advancement.takanarumod.silver_apple_eaten.description" },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "takanarumod:root",
+  "criteria": {
+    "eat_apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": { "item": { "items": ["takanarumod:silver_apple"] } }
+    }
+  }
+}

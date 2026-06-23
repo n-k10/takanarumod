@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": { "item": "takanarumod:silver" },
+    "title": { "translate": "advancement.takanarumod.root.title" },
+    "description": { "translate": "advancement.takanarumod.root.description" },
+    "background": "minecraft:textures/block/stone.png",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "has_silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["takanarumod:silver"] }]
+      }
+    }
+  }
+}

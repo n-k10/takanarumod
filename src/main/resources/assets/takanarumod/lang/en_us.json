@@ -39,6 +39,17 @@
 
   "entity.minecraft.villager.takanarumod.silversmith": "Silversmith",
 
+  "advancement.takanarumod.root.title": "The Silver Age",
+  "advancement.takanarumod.root.description": "Obtain silver for the first time",
+  "advancement.takanarumod.silver_tools.title": "Silver Arsenal",
+  "advancement.takanarumod.silver_tools.description": "Craft a silver sword and pickaxe",
+  "advancement.takanarumod.full_silver_armor.title": "Silver Knight",
+  "advancement.takanarumod.full_silver_armor.description": "Obtain a full set of silver armor",
+  "advancement.takanarumod.silver_apple_eaten.title": "Silver Blessing",
+  "advancement.takanarumod.silver_apple_eaten.description": "Eat a silver apple",
+  "advancement.takanarumod.silver_master.title": "Silver Master",
+  "advancement.takanarumod.silver_master.description": "Collect every silver tool, armor, and the detector",
+
   "subtitles.takanarumod.silver_chime": "Silver Chime",
 
   "creativetab.tutorial_tab": "Takanaru Tab"

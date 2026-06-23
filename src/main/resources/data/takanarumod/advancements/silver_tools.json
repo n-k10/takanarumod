@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": { "item": "takanarumod:silver_pickaxe" },
+    "title": { "translate": "advancement.takanarumod.silver_tools.title" },
+    "description": { "translate": "advancement.takanarumod.silver_tools.description" },
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "takanarumod:root",
+  "criteria": {
+    "has_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_sword"] }] }
+    },
+    "has_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_pickaxe"] }] }
+    }
+  }
+}

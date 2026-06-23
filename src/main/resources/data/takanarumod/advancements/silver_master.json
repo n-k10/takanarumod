@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": { "item": "takanarumod:silver_detector" },
+    "title": { "translate": "advancement.takanarumod.silver_master.title" },
+    "description": { "translate": "advancement.takanarumod.silver_master.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "takanarumod:full_silver_armor",
+  "criteria": {
+    "has_detector": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["takanarumod:silver_detector"] }] }
+    },
+    "has_all_tools": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["takanarumod:silver_sword"] },
+          { "items": ["takanarumod:silver_pickaxe"] },
+          { "items": ["takanarumod:silver_axe"] },
+          { "items": ["takanarumod:silver_shovel"] },
+          { "items": ["takanarumod:silver_hoe"] }
+        ]
+      }
+    },
+    "has_all_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["takanarumod:silver_helmet"] },
+          { "items": ["takanarumod:silver_chestplate"] },
+          { "items": ["takanarumod:silver_leggings"] },
+          { "items": ["takanarumod:silver_boots"] }
+        ]
+      }
+    }
+  }
+}

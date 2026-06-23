@@ -39,6 +39,17 @@
 
   "entity.minecraft.villager.takanarumod.silversmith": "銀細工師",
 
+  "advancement.takanarumod.root.title": "銀の時代",
+  "advancement.takanarumod.root.description": "はじめて銀を手に入れた",
+  "advancement.takanarumod.silver_tools.title": "銀の武装",
+  "advancement.takanarumod.silver_tools.description": "銀の剣とツルハシを作った",
+  "advancement.takanarumod.full_silver_armor.title": "銀の騎士",
+  "advancement.takanarumod.full_silver_armor.description": "銀の防具をすべて揃えた",
+  "advancement.takanarumod.silver_apple_eaten.title": "銀の祝福",
+  "advancement.takanarumod.silver_apple_eaten.description": "銀のリンゴを食べた",
+  "advancement.takanarumod.silver_master.title": "銀のマスター",
+  "advancement.takanarumod.silver_master.description": "銀のツール・防具・探知機をすべて集めた",
+
   "subtitles.takanarumod.silver_chime": "銀の音色",
 
   "creativetab.tutorial_tab": "たかなるタブ"
