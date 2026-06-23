@@ -26,3 +26,9 @@ forge*changelog.txt
 
 # log
 run-data/*
+
+# docs
+docs/
+
+# claude
+.claude/

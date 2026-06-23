@@ -1,6 +1,6 @@
-package com.example.examplemod.item;
+package tech.takanaru.tutorialmod.item;
 
-import com.example.examplemod.TakanaruMod;
+import tech.takanaru.tutorialmod.TakanaruMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
