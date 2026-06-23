@@ -1,8 +1,10 @@
 package tech.takanaru.tutorialmod;
 
 import tech.takanaru.tutorialmod.block.ModBlocks;
+import tech.takanaru.tutorialmod.effect.ModEffects;
 import tech.takanaru.tutorialmod.item.ModCreativeModTabs;
 import tech.takanaru.tutorialmod.item.ModItems;
+import tech.takanaru.tutorialmod.potion.ModPotions;
 import tech.takanaru.tutorialmod.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -47,6 +49,8 @@ public class TakanaruMod
         ModItems.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -60,6 +64,17 @@ public class TakanaruMod
         event.enqueueWork(() -> {
             ((net.minecraft.world.level.block.FlowerPotBlock) net.minecraft.world.level.block.Blocks.FLOWER_POT)
                     .addPlant(ModBlocks.SILVER_BLOSSOM.getId(), ModBlocks.POTTED_SILVER_BLOSSOM);
+
+            net.minecraftforge.common.brewing.BrewingRecipeRegistry.addRecipe(
+                    new net.minecraftforge.common.brewing.BrewingRecipe(
+                            net.minecraft.world.item.crafting.Ingredient.of(
+                                    net.minecraft.world.item.alchemy.PotionUtils.setPotion(
+                                            new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.POTION),
+                                            net.minecraft.world.item.alchemy.Potions.AWKWARD)),
+                            net.minecraft.world.item.crafting.Ingredient.of(ModItems.SILVER.get()),
+                            net.minecraft.world.item.alchemy.PotionUtils.setPotion(
+                                    new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.POTION),
+                                    ModPotions.SILVER_SIGHT_POTION.get())));
         });
     }
 

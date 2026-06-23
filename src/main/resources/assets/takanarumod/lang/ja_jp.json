@@ -32,6 +32,9 @@
   "tooltip.takanarumod.silver_sword": "敵を発光させる",
   "tooltip.takanarumod.silver": "不思議な銀の金属...",
 
+  "effect.takanarumod.silver_sight": "銀の視覚",
+  "item.minecraft.potion.effect.silver_sight": "銀の視覚のポーション",
+
   "subtitles.takanarumod.silver_chime": "銀の音色",
 
   "creativetab.tutorial_tab": "たかなるタブ"

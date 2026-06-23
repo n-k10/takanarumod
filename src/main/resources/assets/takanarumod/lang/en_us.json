@@ -32,6 +32,9 @@
   "tooltip.takanarumod.silver_sword": "Makes enemies glow on hit",
   "tooltip.takanarumod.silver": "A mysterious silver metal...",
 
+  "effect.takanarumod.silver_sight": "Silver Sight",
+  "item.minecraft.potion.effect.silver_sight": "Potion of Silver Sight",
+
   "subtitles.takanarumod.silver_chime": "Silver Chime",
 
   "creativetab.tutorial_tab": "Takanaru Tab"

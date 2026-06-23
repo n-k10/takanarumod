@@ -2,28 +2,26 @@
 
 Minecraft Forge 1.20.1 のModding入門リポジトリです。
 
-## Step 20: 特殊アイテムを作ろう
+## Step 21: エフェクトとポーションを追加しよう
 
-このステップでは、右クリックで近くの銀鉱石を探知する「銀の探知機」を追加します。
-半径5ブロック以内に銀鉱石があると座標を表示します。
+このステップでは、カスタムエフェクト「銀の視覚」と、それを付与するポーションを追加します。
+醸造台で奇妙なポーション+銀インゴットから作れます。
 
 ### やること
-- `SilverDetectorItem.java` を作成して `use()` メソッドをオーバーライドする
-- 周囲のブロックをスキャンして銀鉱石を探す
-- 結果をチャットメッセージで表示する
-- クールダウン（2秒）を設定する
+- `SilverSightEffect.java` を作成する（MobEffectを拡張、発光効果を毎tick付与）
+- `ModEffects.java` を作成してエフェクトを登録する
+- `ModPotions.java` を作成してポーションを登録する
+- `TakanaruMod.java` に登録を追加し、醸造レシピを設定する
 
 ### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/java/tech/takanaru/tutorialmod/item/SilverDetectorItem.java` | 新規 |
-| `src/main/java/tech/takanaru/tutorialmod/item/ModItems.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java` | 編集 |
-| `src/main/resources/assets/takanarumod/models/item/silver_detector.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_detector.json` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/effect/SilverSightEffect.java` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/effect/ModEffects.java` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/potion/ModPotions.java` | 新規 |
+| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
 | `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
 | `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
 
 ### テクスチャ
-以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
-- `src/main/resources/assets/takanarumod/textures/item/silver_detector.png`
+このステップでは新しいテクスチャは不要です。
