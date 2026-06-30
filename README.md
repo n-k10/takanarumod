@@ -33,3 +33,6 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
 - `src/main/resources/assets/takanarumod/textures/block/silver_lamp.png`（消灯時）
 - `src/main/resources/assets/takanarumod/textures/block/silver_lamp_on.png`（点灯時）
+
+テクスチャは [Piskel Kids](https://www.piskelapp.com/kids/) を使ってドット絵を描くのがおすすめです。
+サイズは **16x16ピクセル** で作成し、PNG形式で保存してください。
