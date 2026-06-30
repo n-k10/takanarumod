@@ -39,3 +39,6 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 アイテムアイコン:
 - `src/main/resources/assets/takanarumod/textures/item/silver_berry.png`
 - `src/main/resources/assets/takanarumod/textures/item/silver_berry_seeds.png`
+
+テクスチャは [Piskel Kids](https://www.piskelapp.com/kids/) を使ってドット絵を描くのがおすすめです。
+サイズは **16x16ピクセル** で作成し、PNG形式で保存してください。
