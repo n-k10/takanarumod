@@ -26,3 +26,6 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### テクスチャ
 以下のテクスチャを自分で描いて配置してください（8x8ピクセルのPNG推奨）:
 - `src/main/resources/assets/takanarumod/textures/particle/silver_sparkle.png`
+
+テクスチャは [Piskel Kids](https://www.piskelapp.com/kids/) を使ってドット絵を描くのがおすすめです。
+パーティクルは **8x8ピクセル** で作成し、PNG形式で保存してください。
