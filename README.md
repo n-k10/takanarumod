@@ -42,3 +42,6 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 装着時の見た目用（バニラの鉄防具テクスチャを参考にしてください）:
 - `src/main/resources/assets/takanarumod/textures/models/armor/silver_layer_1.png`（ヘルメット・チェスト・ブーツ用）
 - `src/main/resources/assets/takanarumod/textures/models/armor/silver_layer_2.png`（レギンス用）
+
+テクスチャは [Piskel Kids](https://www.piskelapp.com/kids/) を使ってドット絵を描くのがおすすめです。
+アイテムアイコンは **16x16ピクセル** で作成し、PNG形式で保存してください。
