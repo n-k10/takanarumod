@@ -25,3 +25,6 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### テクスチャ
 以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
 - `src/main/resources/assets/takanarumod/textures/item/silver_apple.png`
+
+テクスチャは [Piskel Kids](https://www.piskelapp.com/kids/) を使ってドット絵を描くのがおすすめです。
+サイズは **16x16ピクセル** で作成し、PNG形式で保存してください。
