@@ -8,9 +8,10 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 Forge MDKのテンプレートをベースに、Modの基本構造を理解しましょう。
 
 ### 事前に必要なもの
-- Java 17（JDK）
-- IntelliJ IDEA または Eclipse
-- Minecraft 1.20.1
+- **Java 17（JDK）** — [Adoptium](https://adoptium.net/) からダウンロード
+- **IntelliJ IDEA Community Edition**（無料） — [JetBrains](https://www.jetbrains.com/idea/download/) からダウンロード
+- **Forge MDK 1.20.1** — [Minecraft Forge](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html) からダウンロード
+- **Minecraft 1.20.1**
 
 ### セットアップ手順
 1. このリポジトリをクローンする
