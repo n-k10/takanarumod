@@ -40,3 +40,6 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 - `src/main/resources/assets/takanarumod/textures/block/silver_door_bottom.png`（ドア下半分）
 - `src/main/resources/assets/takanarumod/textures/block/silver_trapdoor.png`（トラップドア）
 - `src/main/resources/assets/takanarumod/textures/item/silver_door.png`（ドアのアイテムアイコン）
+
+テクスチャは [Piskel Kids](https://www.piskelapp.com/kids/) を使ってドット絵を描くのがおすすめです。
+サイズは **16x16ピクセル** で作成し、PNG形式で保存してください。
