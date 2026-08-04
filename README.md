@@ -8,27 +8,27 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 種を耕地に植えると、8段階で成長し、収穫時にベリーと種がドロップします。
 
 ### やること
-- `SilverBerryCropBlock.java` を作成する（CropBlockを拡張）
-- `ModBlocks.java` に作物ブロックを登録する（BlockItemなし）
-- `ModItems.java` に銀のベリー（食べ物）と種（ItemNameBlockItem）を登録する
+- [`SilverBerryCropBlock.java`](src/main/java/tech/takanaru/tutorialmod/block/SilverBerryCropBlock.java) を作成する（CropBlockを拡張）
+- [`ModBlocks.java`](src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java) に作物ブロックを登録する（BlockItemなし）
+- [`ModItems.java`](src/main/java/tech/takanaru/tutorialmod/item/ModItems.java) に銀のベリー（食べ物）と種（ItemNameBlockItem）を登録する
 - クリエイティブタブに追加する
 - blockstate（age 0-7）・各成長段階のモデル・アイテムモデル・ルートテーブル・翻訳を追加する
 
 ### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/java/tech/takanaru/tutorialmod/block/SilverBerryCropBlock.java` | 新規 |
-| `src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/item/ModItems.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
-| `src/main/resources/assets/takanarumod/blockstates/silver_berry_crop.json` | 新規 |
+| [`src/main/java/tech/takanaru/tutorialmod/block/SilverBerryCropBlock.java`](src/main/java/tech/takanaru/tutorialmod/block/SilverBerryCropBlock.java) | 新規 |
+| [`src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java`](src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java) | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/item/ModItems.java`](src/main/java/tech/takanaru/tutorialmod/item/ModItems.java) | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java`](src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java) | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java`](src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java) | 編集 |
+| [`src/main/resources/assets/takanarumod/blockstates/silver_berry_crop.json`](src/main/resources/assets/takanarumod/blockstates/silver_berry_crop.json) | 新規 |
 | `src/main/resources/assets/takanarumod/models/block/silver_berry_crop_stage0〜7.json` (8ファイル) | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_berry.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_berry_seeds.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_berry_crop.json` | 新規 |
-| `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
-| `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
+| [`src/main/resources/assets/takanarumod/models/item/silver_berry.json`](src/main/resources/assets/takanarumod/models/item/silver_berry.json) | 新規 |
+| [`src/main/resources/assets/takanarumod/models/item/silver_berry_seeds.json`](src/main/resources/assets/takanarumod/models/item/silver_berry_seeds.json) | 新規 |
+| [`src/main/resources/data/takanarumod/loot_tables/blocks/silver_berry_crop.json`](src/main/resources/data/takanarumod/loot_tables/blocks/silver_berry_crop.json) | 新規 |
+| [`src/main/resources/assets/takanarumod/lang/en_us.json`](src/main/resources/assets/takanarumod/lang/en_us.json) | 編集 |
+| [`src/main/resources/assets/takanarumod/lang/ja_jp.json`](src/main/resources/assets/takanarumod/lang/ja_jp.json) | 編集 |
 
 ### テクスチャ
 以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
