@@ -14,8 +14,8 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### 追加するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_block.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_ore.json` | 新規 |
+| [`src/main/resources/data/takanarumod/loot_tables/blocks/silver_block.json`](src/main/resources/data/takanarumod/loot_tables/blocks/silver_block.json) | 新規 |
+| [`src/main/resources/data/takanarumod/loot_tables/blocks/silver_ore.json`](src/main/resources/data/takanarumod/loot_tables/blocks/silver_ore.json) | 新規 |
 
 ### テクスチャ
 このステップでは新しいテクスチャは不要です。
