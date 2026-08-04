@@ -8,8 +8,8 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ドアは透明部分があるため、RenderTypeの設定（cutout）が必要です。
 
 ### やること
-- `ModBlocks.java` に `DoorBlock`, `TrapDoorBlock` を登録する
-- `TakanaruMod.java` のクライアント設定でRenderType.cutout()を設定する
+- [`ModBlocks.java`](src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java) に `DoorBlock`, `TrapDoorBlock` を登録する
+- [`TakanaruMod.java`](src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java) のクライアント設定でRenderType.cutout()を設定する
 - クリエイティブタブに追加する
 - ブロックステート・ブロックモデル・アイテムモデルのJSONを追加する
 - ルートテーブル・レシピ・翻訳・タグを追加する
@@ -17,22 +17,22 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java` | 編集 |
-| `src/main/resources/assets/takanarumod/blockstates/silver_door.json` | 新規 |
-| `src/main/resources/assets/takanarumod/blockstates/silver_trapdoor.json` | 新規 |
+| [`src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java`](src/main/java/tech/takanaru/tutorialmod/block/ModBlocks.java) | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java`](src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java) | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java`](src/main/java/tech/takanaru/tutorialmod/item/ModCreativeModTabs.java) | 編集 |
+| [`src/main/resources/assets/takanarumod/blockstates/silver_door.json`](src/main/resources/assets/takanarumod/blockstates/silver_door.json) | 新規 |
+| [`src/main/resources/assets/takanarumod/blockstates/silver_trapdoor.json`](src/main/resources/assets/takanarumod/blockstates/silver_trapdoor.json) | 新規 |
 | `src/main/resources/assets/takanarumod/models/block/silver_door_*.json` (8ファイル) | 新規 |
 | `src/main/resources/assets/takanarumod/models/block/silver_trapdoor_*.json` (3ファイル) | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_door.json` | 新規 |
-| `src/main/resources/assets/takanarumod/models/item/silver_trapdoor.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_door.json` | 新規 |
-| `src/main/resources/data/takanarumod/loot_tables/blocks/silver_trapdoor.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_door.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_trapdoor.json` | 新規 |
-| `src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json` | 編集 |
-| `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
-| `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
+| [`src/main/resources/assets/takanarumod/models/item/silver_door.json`](src/main/resources/assets/takanarumod/models/item/silver_door.json) | 新規 |
+| [`src/main/resources/assets/takanarumod/models/item/silver_trapdoor.json`](src/main/resources/assets/takanarumod/models/item/silver_trapdoor.json) | 新規 |
+| [`src/main/resources/data/takanarumod/loot_tables/blocks/silver_door.json`](src/main/resources/data/takanarumod/loot_tables/blocks/silver_door.json) | 新規 |
+| [`src/main/resources/data/takanarumod/loot_tables/blocks/silver_trapdoor.json`](src/main/resources/data/takanarumod/loot_tables/blocks/silver_trapdoor.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_door.json`](src/main/resources/data/takanarumod/recipes/silver_door.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_trapdoor.json`](src/main/resources/data/takanarumod/recipes/silver_trapdoor.json) | 新規 |
+| [`src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json`](src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json) | 編集 |
+| [`src/main/resources/assets/takanarumod/lang/en_us.json`](src/main/resources/assets/takanarumod/lang/en_us.json) | 編集 |
+| [`src/main/resources/assets/takanarumod/lang/ja_jp.json`](src/main/resources/assets/takanarumod/lang/ja_jp.json) | 編集 |
 
 ### テクスチャ
 以下のテクスチャを自分で描いて配置してください（16x16ピクセルのPNG）:
