@@ -23,13 +23,13 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/resources/data/takanarumod/advancements/root.json` | 新規 |
-| `src/main/resources/data/takanarumod/advancements/silver_tools.json` | 新規 |
-| `src/main/resources/data/takanarumod/advancements/full_silver_armor.json` | 新規 |
-| `src/main/resources/data/takanarumod/advancements/silver_apple_eaten.json` | 新規 |
-| `src/main/resources/data/takanarumod/advancements/silver_master.json` | 新規 |
-| `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
-| `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
+| [`src/main/resources/data/takanarumod/advancements/root.json`](src/main/resources/data/takanarumod/advancements/root.json) | 新規 |
+| [`src/main/resources/data/takanarumod/advancements/silver_tools.json`](src/main/resources/data/takanarumod/advancements/silver_tools.json) | 新規 |
+| [`src/main/resources/data/takanarumod/advancements/full_silver_armor.json`](src/main/resources/data/takanarumod/advancements/full_silver_armor.json) | 新規 |
+| [`src/main/resources/data/takanarumod/advancements/silver_apple_eaten.json`](src/main/resources/data/takanarumod/advancements/silver_apple_eaten.json) | 新規 |
+| [`src/main/resources/data/takanarumod/advancements/silver_master.json`](src/main/resources/data/takanarumod/advancements/silver_master.json) | 新規 |
+| [`src/main/resources/assets/takanarumod/lang/en_us.json`](src/main/resources/assets/takanarumod/lang/en_us.json) | 編集 |
+| [`src/main/resources/assets/takanarumod/lang/ja_jp.json`](src/main/resources/assets/takanarumod/lang/ja_jp.json) | 編集 |
 
 ### テクスチャ
 このステップでは新しいテクスチャは不要です。
