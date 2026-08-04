@@ -37,10 +37,10 @@ gradle.properties        ← Mod ID、バージョンなどの設定値
 ### 重要なファイル
 | ファイル | 説明 |
 |---------|------|
-| `src/main/java/com/example/examplemod/TakanaruMod.java` | Modのエントリーポイント |
-| `src/main/java/com/example/examplemod/Config.java` | Mod設定の定義 |
-| `src/main/resources/META-INF/mods.toml` | Modのメタデータ |
-| `gradle.properties` | Mod ID・バージョン・Forgeバージョンなどの設定 |
+| [`src/main/java/com/example/examplemod/TakanaruMod.java`](src/main/java/com/example/examplemod/TakanaruMod.java) | Modのエントリーポイント |
+| [`src/main/java/com/example/examplemod/Config.java`](src/main/java/com/example/examplemod/Config.java) | Mod設定の定義 |
+| [`src/main/resources/META-INF/mods.toml`](src/main/resources/META-INF/mods.toml) | Modのメタデータ |
+| [`gradle.properties`](gradle.properties) | Mod ID・バージョン・Forgeバージョンなどの設定 |
 
 ### テクスチャ
 このステップでは新しいテクスチャは不要です。
