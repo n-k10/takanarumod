@@ -16,12 +16,12 @@ JSONファイルだけで完結するので、Javaの変更はありません。
 ### 追加するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/resources/data/takanarumod/recipes/silver_block.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_from_silver_block.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_from_smelting_silver_ore.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_from_blasting_silver_ore.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_from_smelting_raw_silver.json` | 新規 |
-| `src/main/resources/data/takanarumod/recipes/silver_from_blasting_raw_silver.json` | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_block.json`](src/main/resources/data/takanarumod/recipes/silver_block.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_from_silver_block.json`](src/main/resources/data/takanarumod/recipes/silver_from_silver_block.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_from_smelting_silver_ore.json`](src/main/resources/data/takanarumod/recipes/silver_from_smelting_silver_ore.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_from_blasting_silver_ore.json`](src/main/resources/data/takanarumod/recipes/silver_from_blasting_silver_ore.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_from_smelting_raw_silver.json`](src/main/resources/data/takanarumod/recipes/silver_from_smelting_raw_silver.json) | 新規 |
+| [`src/main/resources/data/takanarumod/recipes/silver_from_blasting_raw_silver.json`](src/main/resources/data/takanarumod/recipes/silver_from_blasting_raw_silver.json) | 新規 |
 
 ### テクスチャ
 このステップでは新しいテクスチャは不要です。
