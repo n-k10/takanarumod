@@ -8,9 +8,9 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 銀のランプを作業台として使い、銀製品をエメラルドで売買できます。
 
 ### やること
-- `ModVillagers.java` を作成してPOIタイプと職業を登録する
-- `TakanaruMod.java` に登録を追加する
-- `ModEvents.java` に `VillagerTradesEvent` ハンドラを追加して取引内容を設定する
+- [`ModVillagers.java`](src/main/java/tech/takanaru/tutorialmod/villager/ModVillagers.java) を作成してPOIタイプと職業を登録する
+- [`TakanaruMod.java`](src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java) に登録を追加する
+- [`ModEvents.java`](src/main/java/tech/takanaru/tutorialmod/event/ModEvents.java) に `VillagerTradesEvent` ハンドラを追加して取引内容を設定する
 - 翻訳ファイルに職業名を追加する
 
 ### 取引内容
@@ -26,11 +26,11 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### 追加・編集するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/java/tech/takanaru/tutorialmod/villager/ModVillagers.java` | 新規 |
-| `src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java` | 編集 |
-| `src/main/java/tech/takanaru/tutorialmod/event/ModEvents.java` | 編集 |
-| `src/main/resources/assets/takanarumod/lang/en_us.json` | 編集 |
-| `src/main/resources/assets/takanarumod/lang/ja_jp.json` | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/villager/ModVillagers.java`](src/main/java/tech/takanaru/tutorialmod/villager/ModVillagers.java) | 新規 |
+| [`src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java`](src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java) | 編集 |
+| [`src/main/java/tech/takanaru/tutorialmod/event/ModEvents.java`](src/main/java/tech/takanaru/tutorialmod/event/ModEvents.java) | 編集 |
+| [`src/main/resources/assets/takanarumod/lang/en_us.json`](src/main/resources/assets/takanarumod/lang/en_us.json) | 編集 |
+| [`src/main/resources/assets/takanarumod/lang/ja_jp.json`](src/main/resources/assets/takanarumod/lang/ja_jp.json) | 編集 |
 
 ### テクスチャ
 このステップでは新しいテクスチャは不要です。
