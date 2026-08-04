@@ -15,9 +15,9 @@ Minecraft Forge 1.20.1 のModding入門リポジトリです。
 ### 追加するファイル
 | ファイル | 種類 |
 |---------|------|
-| `src/main/resources/data/takanarumod/worldgen/configured_feature/silver_ore.json` | 新規 |
-| `src/main/resources/data/takanarumod/worldgen/placed_feature/silver_ore_placed.json` | 新規 |
-| `src/main/resources/data/takanarumod/forge/biome_modifier/add_silver_ore.json` | 新規 |
+| [`src/main/resources/data/takanarumod/worldgen/configured_feature/silver_ore.json`](src/main/resources/data/takanarumod/worldgen/configured_feature/silver_ore.json) | 新規 |
+| [`src/main/resources/data/takanarumod/worldgen/placed_feature/silver_ore_placed.json`](src/main/resources/data/takanarumod/worldgen/placed_feature/silver_ore_placed.json) | 新規 |
+| [`src/main/resources/data/takanarumod/forge/biome_modifier/add_silver_ore.json`](src/main/resources/data/takanarumod/forge/biome_modifier/add_silver_ore.json) | 新規 |
 
 ### テクスチャ
 このステップでは新しいテクスチャは不要です。
