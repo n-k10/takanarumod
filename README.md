@@ -22,7 +22,7 @@ Forge MDKのテンプレートをベースに、Modの基本構造を理解し�
 ### プロジェクト構造
 ```
 src/main/java/           ← Javaのソースコード
-  com/example/examplemod/
+  tech/takanaru/tutorialmod/
     TakanaruMod.java     ← Modのメインクラス（@Mod アノテーション）
     Config.java          ← 設定ファイル用クラス
 
@@ -37,8 +37,8 @@ gradle.properties        ← Mod ID、バージョンなどの設定値
 ### 重要なファイル
 | ファイル | 説明 |
 |---------|------|
-| [`src/main/java/com/example/examplemod/TakanaruMod.java`](src/main/java/com/example/examplemod/TakanaruMod.java) | Modのエントリーポイント |
-| [`src/main/java/com/example/examplemod/Config.java`](src/main/java/com/example/examplemod/Config.java) | Mod設定の定義 |
+| [`src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java`](src/main/java/tech/takanaru/tutorialmod/TakanaruMod.java) | Modのエントリーポイント |
+| [`src/main/java/tech/takanaru/tutorialmod/Config.java`](src/main/java/tech/takanaru/tutorialmod/Config.java) | Mod設定の定義 |
 | [`src/main/resources/META-INF/mods.toml`](src/main/resources/META-INF/mods.toml) | Modのメタデータ |
 | [`gradle.properties`](gradle.properties) | Mod ID・バージョン・Forgeバージョンなどの設定 |
 
